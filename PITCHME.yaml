@@ -27,7 +27,7 @@ footnote : " "
 # Published Setting
 # Doc: https://gitpitch.com/docs/settings/published
 #
-published : true
+published : false
 
 #
 # Twitter Card Settings (This Presentation)
