@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=anaglyph|brick-sign|canvas-print|crackle|decaying|destruction|distressed|distressed-wood|emboss|fire|fire-animation|fragile|grass|ice|mitosis|neon|outline|putting-green|scuffed-steel|shadow-multiple|splintered|static|stonewash|3d|3d-float|vintage|wallpaper');
+
+@font-face {
+  font-family: "Azonix";
+    src: url(assets/fonts/Azonix.otf);
+    url: ("assets/fonts/Azonix.otf");
+    format:("opentype");
+  }
+
+.font-rancho {]
+  font-family: "Rancho";
+  font-size: 160%;
+}
+
+.font-lato-thin { 
+  font-family: "lato" !important; 
+  font-style: normal;
+  font-weight: 100;
+}
+.jx-header {
+  color: #FAD744;
+  font-family: "Azonix" !important;
+}
+
+.thin-text {
+    font-family: 'Raleway Light', "Raleway" !important;
+    font-weight: 100;
+}
+
+.reveal h2 {
+  color: #FAD744;
+  font-family: "Raleway Medium", "Raleway" !important;
+  text-transform: none;
+  margin: 0 0 15px 0;
+  line-height: 120%;
+  font-size: 160%;
+  text-shadow: none;
+  letter-spacing: normal;
+  word-wrap: break-word;
+}
+
+.reveal h3 {
+  color: #FAD744;
+  font-family: "Raleway Thin", "Raleway" !important;
+  font-size: 130%;
+
+}
+
+
+/* utility custom classes, 
+go on with your bad self!
+ */
+.text-red  { color: #a90202 !important; }
+
+.pulsingheart { 
+  
+  background: rgb(185,128,176);
+  background: linear-gradient(90deg, rgba(185,128,176,1) 0%, rgba(253,73,92,1) 50%, rgba(0,15,159,1) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  fill: none;
+  position: relative;
+  animation: pulse 1s ease infinite;
+} 
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.blurry-text {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5) !important;
+}
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5) !important;
+}
+.box-shadow {
+  box-shadow:0 14px 20px 0 rgba(0,0,0,0.2),0 10px 24px 0 rgba(0,0,0,0.19) !important;
+}
+
+/* add an image can be grayscale */
+.half
+
+  {
+    
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+        0 0 60px 30px #fff,  /* inner white */
+        0 0 100px 60px #f0f, /* middle magenta */
+        0 0 140px 90px #0ff; /* outer cyan */
+}

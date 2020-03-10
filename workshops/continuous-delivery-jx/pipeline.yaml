@@ -1,0 +1,23 @@
+buildPack: javascript
+pipelineConfig:
+  env:
+  - name: GITHUB_AUTH_CLIENT_ID
+    valueFrom:
+      secretKeyRef:
+        key: clientID
+        name: github-auth
+  - name: GITHUB_AUTH_CLIENT_SECRET
+    valueFrom:
+      secretKeyRef:
+        key: clientSecret
+        name: github-auth
+  pipelines:
+    overrides:
+    - pipeline: release
+      stage: build
+      type: before
+      steps:
+        - sh: echo ====================================== GITHUB_AUTH_CLIENT_ID= ${GITHUB_AUTH_CLIENT_ID} ======================================
+          name: sposcar-echo-clientid
+        - sh: echo ====================================== GITHUB_AUTH_CLIENT_SECRET= ${GITHUB_AUTH_CLIENT_SECRET} ======================================
+          name: sposcar-echo-clientsecret
