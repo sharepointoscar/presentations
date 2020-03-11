@@ -14,7 +14,7 @@
 @snapend
 
 @snap[east fragment]
-![height=500px,filter=blur,title=Jenkins is NOT Jenkins X](assets/img/jx-artwork/jenkins.png)
+![height=500px,title=Jenkins is NOT Jenkins X](assets/img/jx-artwork/jenkins.png)
 @snapend
 
 @snap[east fragment]
@@ -39,15 +39,12 @@
 @title[What is Jenkins X? - why it is not Jenkins X]
 
 @snap[east fragment]
-![half,height=500px,filter=blur,title=Jenkins is NOT Jenkins X](assets/img/jx-artwork/jenkins-v-jenkinsx.png)
-@snapend
-@snap[east fragment]
 ![half,height=500px,title=Jenkins is NOT Jenkins X](assets/img/jx-artwork/jenkins-v-jenkinsx.png)
 @snapend
 
 
 @snap[west span-55]
-@quote[Jenkins X is Jenkins’ spiritual counterpart for the cloud-native world](CloudBees)
+@quote[Jenkins X is Jenkins’ spiritual counterpart for the cloud-native world]
 @snapend
 
 ---
@@ -119,3 +116,101 @@
 @snapend
 
 @snapend
+
+@title[Jenkins X - QuickStarts]
+---?image=assets/img/jx-artwork/jx-robocat.png&position=left 45%&size=40%
+
+@snap[east span-70]
+##  QuickStarts
+
+#### Kick the tires without writing a single line of code.
+
+@css[text-06 thin-text text-italic]([ Namespaced Ingress, Pod running sampled app ] )
+
+@snap[west-south]
+![height=100px](assets/img/k8s-icons/resources/labeled/ns.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/ing.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/pod.svg)
+@snapend
+
+@snapend
+
+@title[Jenkins X - DevPods]
+---?image=assets/img/jx-artwork/jx-devpods.png&position=left 45%&size=40%
+
+@snap[east span-70]
+##  DevPods
+
+#### develop in the cloud via a kubernetes devpod.
+
+@css[text-06 thin-text text-italic]([   Ingress, Pod with your project files synched, modify live ] )
+
+@snap[west-south]
+![height=100px](assets/img/k8s-icons/resources/labeled/ns.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/ing.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/pod.svg)
+@snapend
+
+@snapend
+
+@title[Jenkins X - Build Packs]
+---?image=assets/img/jx-artwork/jx-robocat.png&position=left 45%&size=40%
+
+@snap[east span-70]
+##  Build Packs
+
+#### pipeline templates based on the language your app runs.
+
+@css[text-06 thin-text text-italic]([ Namespaced Ingress, Pod running your latest app version ] )
+
+@snap[west-south]
+![height=100px](assets/img/k8s-icons/resources/labeled/ns.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/ing.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/pod.svg)
+@snapend
+
+@snapend
+
+@title[Jenkins X - Serverless Deployments]
+---?image=assets/img/jx-artwork/jx-serverless.png&position=left 45%&size=40%
+
+@snap[east span-70]
+##  Serverless Deployments
+
+#### knative spin up/down based on demand.
+
+@css[text-06 thin-text text-italic]([ Namespaced Ingress, Pod running your latest app version ] )
+
+@snap[west-south]
+![height=100px](assets/img/k8s-icons/resources/labeled/ns.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/ing.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/pod.svg)
+@snapend
+
+@snapend
+
+@title[Jenkins X - GitOps]
+---?image=assets/img/jx-artwork/jx-gitops.png&position=left 45%&size=40%
+
+@snap[east span-70]
+##  GitOps
+
+#### git as single source of truth for everything.
+@css[text-06 text-gold]( jx uses gitops to manage its own config)
+
+@css[text-06 thin-text text-italic]([ git repositories hold all configuration ] )
+
+@snap[west-south text-blue]
+@fa[git-square fa-3x] @fa[github-square fa-3x]
+@snapend
+
+@snapend
+
+---
+
+@title[Questions]
+@snap[north span-100]
+## @css[text-yellow](Got Questions   @fa[question])
+@snapend
+# Q&A
+@emoji[tada]

@@ -2,8 +2,8 @@
 ![IMAGE](assets/img/jx-logo.svg)
 
 
-## Implement Canary @css[text-yellow text-15](@emoji[ ]) Deployments for your App
-
+## Implement Canary @css[text-yellow text-15](@emoji[bird]) Deployments for your App
+@css[text-06](Live with:<br> Oscar Medina @SharePointOscar<br>  Viktor Farcic @vfarcic )
 --- 
 @title[Canary Deployments with Jenkins X]
 # Agenda
@@ -241,6 +241,7 @@ kubectl describe canary jx-skiapp -n jx-production
 
 ```
 ---
+
 @title[Configure Canary Settings]
 @snap[north span-100]
 ## @css[text-yellow](<br>Using Grafana  @fa[paint-roller])
@@ -253,36 +254,6 @@ kubectl describe canary jx-skiapp -n jx-production
 LB_IP=$(kubectl --namespace kube-system \
     get svc jxing-nginx-ingress-controller \
     -o jsonpath="{.status.loadBalancer.ingress[0].ip}")
-```
-@snapend
-
----
-
-@title[Configure Canary Settings]
-@snap[north span-100]
-## @css[text-yellow](<br>Using Grafana  @fa[paint-roller])
-#### Visualize canary deployment metrics via Grafana Dashboard
-@snapend
-
-@snap[center]
-```bash
-# create ingress for grafana
-echo "apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  annotations:
-    kubernetes.io/ingress.class: nginx
-  name: flagger-grafana
-  namespace: istio-system
-spec:
-  rules:
-  - host: flagger-grafana.$LB_IP.nip.io
-    http:
-      paths:
-      - backend:
-          serviceName: flagger-grafana
-          servicePort: 80
-" | kubectl create -f -
 ```
 @snapend
 

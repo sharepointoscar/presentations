@@ -1,0 +1,58 @@
+#
+# Theme-Override Setting
+# Doc: https://gitpitch.com/docs/settings/custom-theme
+#
+theme-override: assets/css/PITCHME.css
+
+#
+# Logo Setting
+# https://gitpitch.com/docs/settings/logo
+#
+logo : assets/img/logo_cb.png
+logo-position : top-left
+
+#
+# Layout Setting
+# Doc: https://gitpitch.com/docs/settings/layout
+#
+layout : center
+
+#
+# Footnote Setting
+# Doc: https://gitpitch.com/docs/settings/footnote
+#
+footnote : " "
+
+#
+# Published Setting
+# Doc: https://gitpitch.com/docs/settings/published
+#
+published : true
+
+#
+# Twitter Card Settings (This Presentation)
+# Doc: https://gitpitch.com/docs/settings/twitter-card
+#
+title : "Oscar Medina - Jenkins X Presentations"
+description : "Presentations on my workshops and talks"
+thumbnail : assets/img/jenkinsx-stacked-color.png
+
+code-line-numbers : true
+
+transition: default
+
+# PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
+theme            : template
+theme-background : [ "#403446" ]
+theme-headline   : [ "Raleway", "#B3D6C9", "none", "#FFFFFF", "100", "120", "15" ]
+theme-byline     : [ "Raleway", "#FFFFFF", "none", "#B3D6C9", "100", "110", "15" ]
+theme-text       : [ "Ubuntu", "#B3D6C9", "none", "#92B9B3", "100", "100", "15" ]
+theme-links      : [ "#5289F7", "#5254F7" ]
+theme-code       : [ "Fira Code", "100", "120" ]
+highlight        : monokai
+theme-controls   : [ "#C0C0C0" ]
+theme-margins    : [ "0", "15px" ]
+logo             : assets/img/logo_cb.png
+logo-position    : top-left
+layout           : center
+# PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END
