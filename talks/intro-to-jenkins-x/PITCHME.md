@@ -1,10 +1,20 @@
 ---?image=assets/img/jx-artwork/jx-robocat.png&position=-28% 15%&size=55% 100%
 
-@snap[ text-right]
-## Introduction to Jenkins X
+@snap[text-right]
+## Intro to @css[jx-header]( Jenkins X)
 ### a beginner's guide
 @snapend
 
+---
+@title[Let me take you on a Jenkins X Boat Tour]
+
+@snap[center]
+## Lets explore Jenkins X!!
+@snapend
+
+@snap[center]
+![height=500px,title=Jenkins is NOT Jenkins X](assets/img/jx-artwork/jx-boat-tours.png)
+@snapend
 
 ---
 @title[What is Jenkins X?]
@@ -43,9 +53,14 @@
 @snapend
 
 
-@snap[west span-55]
-@quote[Jenkins X is Jenkins’ spiritual counterpart for the cloud-native world]
+@snap[west text-smallcaps font-lato-thin span-55]
+@css[](Jenkins X is Jenkins’ spiritual counterpart for the cloud-native world)
+
+The concept of pipelines and extensibility is what they have in common.  
+
+@css[text-bold text-gold text-15](That is it!)
 @snapend
+
 
 ---
 @title[Jenkins X - Kubernetes Native CI/CD]
@@ -58,26 +73,27 @@
 @css[font-lato-light](Kubernetes @fa[dharmachakra text-yellow] native)
 
 ##  CI/CD platform
-@css[text-10 thin-text](Comprised of many open-source frameworks)
+@css[text-10 thin-text](Comprised of many open-source technologies)
 @snapend
 
 ---
 @title[What is Jenkins X? - Multi Cloud]
+---?image=assets/img/jx-artwork/jx-tour-poster.png&position=2% 45%&size=25%
 
-@snap[east]
+@snap[center-north text-right]
 ## Runs on the Three Leading Clouds
 @snapend
 
-@snap[west span-80 fragment]
-![width=300,title=Azure](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1200px-Microsoft_Azure_Logo.svg.png)
+@snap[west-south span-66 fragment]
+![height=280px,title=AWS,position=5px](https://www.sinefa.com/wp-content/uploads/2019/03/AWS-Logo-White.png)
 @snapend
 
-@snap[east-south span-88 fragment]
+@snap[east-north span-88 fragment]
 ![width=200,title=GCP](https://seeklogo.com/images/G/google-cloud-logo-6B950E8ADB-seeklogo.com.png)
 @snapend
 
-@snap[west-south span-90 fragment]
-![height=280px,title=AWS,position=60%](https://www.sinefa.com/wp-content/uploads/2019/03/AWS-Logo-White.png)
+@snap[south-east fragment]
+![width=300,title=Azure](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1200px-Microsoft_Azure_Logo.svg.png)
 @snapend
 
 ---
@@ -89,6 +105,18 @@
 ## Tekton is the @fa[heartbeat fa-3x pulsingheart] 
 ## of the Pipeline
 ## Execution Engine
+@snapend
+
+
+@title[What is Jenkins X? - Pipelines]
+---?image=assets/img/jx-artwork/jx-tekton-engine.png&position=-28% 15%&size=55% 100%
+
+@snap[east span-78]
+@ol[list-spaced-bullets list-boxed-bullets text-gold text-08]
+1. Pipelines are declarative (YAML)             @fa[code fa-3x text-yellow]
+2. Stages run on their own ephemeral pod        @fa[box fa-3x text-yellow]
+3. Kubernetes Native                            @fa[dharmachakra fa-3x text-yellow]
+@olend
 @snapend
 
 @title[What is Jenkins X? - Diagram]
@@ -116,6 +144,23 @@
 @snapend
 
 @snapend
+
+@title[Jenkins X - Preview Environments]
+---?image=assets/img/jx-artwork/jx-robocat.png&position=left 45%&size=40%
+
+@snap[east span-70]
+##  ChatOps
+
+#### Jenkins X Bot automatically comments on your Commits, Issues and Pull Requests
+
+@css[text-06 thin-text text-italic]([ Use your Git Provider built-in UI ] )
+
+@snap[west-south text-blue]
+@fa[git-square fa-3x] @fa[github-square fa-3x]
+@snapend
+
+@snapend
+
 
 @title[Jenkins X - QuickStarts]
 ---?image=assets/img/jx-artwork/jx-robocat.png&position=left 45%&size=40%
@@ -177,9 +222,9 @@
 @snap[east span-70]
 ##  Serverless Deployments
 
-#### knative spin up/down based on demand.
+#### Knative spin up/down based on traffic demand.
 
-@css[text-06 thin-text text-italic]([ Namespaced Ingress, Pod running your latest app version ] )
+@css[text-06 thin-text text-italic]([ Namespaced Ingress, Pods running your latest app version ] )
 
 @snap[west-south]
 ![height=100px](assets/img/k8s-icons/resources/labeled/ns.svg)

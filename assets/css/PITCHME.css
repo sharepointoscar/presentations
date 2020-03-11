@@ -9,12 +9,12 @@
   }
 
 .font-rancho {]
-  font-family: "Rancho";
+  font-family: "Rancho", serif !important;
   font-size: 160%;
 }
 
 .font-lato-thin { 
-  font-family: "lato" !important; 
+  font-family: "lato",serif !important; 
   font-style: normal;
   font-weight: 100;
 }
