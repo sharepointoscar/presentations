@@ -18,6 +18,7 @@
 
 ---
 @title[What is Jenkins X?]
+@transition[fade]
 
 @snap[west]
 # What is Jenkins X?
@@ -33,6 +34,7 @@
 
 ---
 @title[What is Jenkins X? - why it is not Jenkins X]
+@transition[fade]
 ---?image=assets/img/jx-artwork/jx-robocat.png&position=-28% 15%&size=55% 100%
 
 @snap[east span-60]
@@ -47,7 +49,7 @@
 
 ---
 @title[What is Jenkins X? - why it is not Jenkins X]
-
+@transition[fade]
 @snap[east fragment]
 ![half,height=500px,title=Jenkins is NOT Jenkins X](assets/img/jx-artwork/jenkins-v-jenkinsx.png)
 @snapend
