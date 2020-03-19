@@ -126,7 +126,7 @@ The concept of pipelines and extensibility is what they have in common.
 
 @snap[east span-80]
 #### Jenkins X Abstracts you from Tekton Intricacies 
-![height=450px](assets/img/jxpipeline-to-tekton.png)
+![IMAGE](assets/img/jx-pipeline-to-tekton.png)
 @snapend
 
 @title[Jenkins X - Preview Environments]
