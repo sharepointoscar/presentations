@@ -51,13 +51,22 @@ mv istio-1.4.3/bin/istioctl /usr/local/bin
 chmod +x /usr/local/bin/istioctl
 
 # install istio
-istioctl manifest apply --set profile=demo --skip-confirmation
+istioctl manifest apply \
+--set profile=demo --skip-confirmation
 
 # install flagger
 kubectl apply \
-    --kustomize github.com/weaveworks/flagger/kustomize/istio
+  --kustomize \
+  github.com/weaveworks/flagger/kustomize/istio
 
 ```
+@snapend
+
+@snap[south span-100 text-15 text-gold]
+@[2,zoom-10](download Istio specific version)
+@[5-6,zoom-15](move to bin and make executable)
+@[9-10,zoom-15](apply istio demo profile)
+@[13-15,zoom-13](Install Flagger)
 @snapend
 
 --- 
@@ -77,13 +86,7 @@ jsonpath='{.status.loadBalancer.ingress[0].ip}')
 export ISTIO_IP="$(dig +short $ISTIO_HOST | tail -n 1)"
 
 echo $ISTIO_IP
-```
 
-@snap[text-06 text-gold]
-View Pods created as a result of installing Istio and Flagger.
-@snapend
-
-```bash
 kubectl get pods --namespace istio-system
 
 # istio injection is enabled
@@ -93,6 +96,15 @@ kubectl describe namespace jx-production
 kubectl label namespace jx-production \
   istio-injection=enabled --overwrite
 ```
+@snap[south span-100 text-15 text-gold]
+@[1-4,zoom-10](set env var with Istio load balancer Host IP)
+@[6,zoom-10](set env var with Istio public IP)
+@[8,zoom-15](verify we have an IP)
+@[10,zoom-15](check all pods are provisioned)
+@[12-13,zoom-15](see if production namespace has istio injection label)
+@[15-17,zoom-15](modify production namespace for istio injection)
+@snapend
+
 @snapend
 
 --- 
@@ -119,19 +131,25 @@ jx get activity -f environment-tequila-staging -w
 ```
 @snapend
 
+@snap[south span-100 text-15 text-gold]
+@[1-3,zoom-10](Import existing app directly from github)
+@[5-6,zoom-10](Monitor triggered pipeline that deploys to Staging)
+@[8-9,zoom-10](Monitor the staging repo changes.)
+@snapend
+
 ---
 
 @title[Configure Canary Settings]
 @snap[north span-100]
-## @css[text-yellow](  <br>Configure Canary Settings   @fa[file-code])
+## @css[text-yellow](  <br> Canary Deployment Goals   @fa[project-diagram])
 @snapend
 
-@snap[montserrat]
-We will deploy our app to production to only 20% of our users while monitoring traffic for 60 seconds.
+@snap[west font-raleway span-50 text-left]
+We will deploy new app features to production and to only 20% of our users while monitoring traffic @emoji[chart_with_upwards_trend] for 60 seconds.
 @snapend
 
 
-@snap[font-montserrat-medium]
+@snap[east font-raleway span-50 text-left]
 We currently have our app running in staging.  The best place to enable canary is in the **Production** environment repository.
 @snapend
 ---
@@ -152,6 +170,12 @@ git clone \
 
 cd environment-$CLUSTER_NAME-production
 ```
+@snap[south span-100 text-15 text-gold]
+@[1,zoom-10](Set environment variable for canary)
+@[3-5,zoom-10](Let's monitor the production git repo for changes)
+@[7-10,zoom-08](clone production repo and cd into directory)
+@snapend
+
 ---
 
 
@@ -174,6 +198,12 @@ echo "skiapp:
 # push our changes to production repo
 git add . && git commit -m "Added progressive deployment" && git push
 ```
+@snap[south span-100 text-15 text-gold]
+@[1-13,zoom-10](Run this command on our terminal. In root of repo directory.)
+@[15-16,zoom-09](Add our changes, commit and push to repo.)
+
+@snapend
+
 ---
 @title[Configure Canary Settings]
 @snap[north span-100]
@@ -242,7 +272,7 @@ kubectl describe canary jx-skiapp -n jx-production
 ```
 ---
 
-@title[Configure Canary Settings]
+@title[View Metrics in Grafana - Configure]
 @snap[north span-100]
 ## @css[text-yellow](<br>Using Grafana  @fa[paint-roller])
 #### Visualize canary deployment metrics via Grafana Dashboard
@@ -255,6 +285,49 @@ LB_IP=$(kubectl --namespace kube-system \
     get svc jxing-nginx-ingress-controller \
     -o jsonpath="{.status.loadBalancer.ingress[0].ip}")
 ```
+@snapend
+
+--- 
+@title[View Metrics in Grafana - Configure]
+## @css[text-yellow](<br>Using Grafana  @fa[paint-roller])
+
+```bash
+# create ingress for Grafana
+echo "apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: flagger-grafana
+  namespace: istio-system
+spec:
+  rules:
+  - host: flagger-grafana.$LB_IP.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: grafana
+          servicePort: 3000
+" | kubectl create -f -
+
+open "http://flagger-grafana.$LB_IP.nip.io"
+```
+
+
+---
+
+@title[View Metrics in Grafana - Configure]
+@snap[north span-100]
+## @css[text-yellow](<br>Using Grafana  @fa[paint-roller])
+#### Configure Dashboard
+@snapend
+
+@snap[middle]
+@ul[list-spaced-bullets list-boxed-bullets text-gold text-07]
+- In Grafana Dashoard, on left nav select **Explore**
+- Select Flagger, and pick *flagger_canary_status* , *flagger_canary_weight* and *flagger_canary_total*
+- Select any other items you want on the dashboard
+@ulend
 @snapend
 
 ---

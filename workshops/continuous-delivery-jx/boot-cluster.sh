@@ -1,6 +1,3 @@
-# set cluster name env var
-export CLUSTER_NAME='tequila'
-
 # clone cluster config repo, change jx-requirements.yaml
 git clone \
     https://github.com/jenkins-x/jenkins-x-boot-config.git  \

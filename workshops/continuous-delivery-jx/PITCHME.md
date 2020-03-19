@@ -67,10 +67,10 @@ Lab @fa[hourglass-start fa-1x] Time!
 @code[bash ](workshops/continuous-delivery-jx/boot-cluster.sh)
 @snapend
 @snap[south span-100 text-gold]
-@[1](set $CLUSTER_NAME environment variable.)
-@[3-7](clone config repo and cd into it.)
-@[9-14](change `jx-requirements.yaml` fields.)
-@[15]
+@[2-4](clone config repository)
+@[6](cd into cloned directory)
+@[8-13](change `jx-requirements.yaml` fields.)
+@[14,zoom-20]
 @snapend
 
 --- 

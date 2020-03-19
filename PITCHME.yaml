@@ -33,8 +33,8 @@ published : false
 # Twitter Card Settings (This Presentation)
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "Oscar Medina - Jenkins X Presentations"
-description : "Presentations on my workshops and talks"
+title : "Oscar Medina @SharePointOscar"
+description : "Talks and Workshops - my decks"
 thumbnail : assets/img/jenkinsx-stacked-color.png
 
 code-line-numbers : true
@@ -43,10 +43,10 @@ transition: none
 
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
 theme            : template
-theme-background : [ "#2B3252" ]
-theme-headline   : [ "Raleway", "#FAD744", "none", "#FFFFFF", "100", "120", "15" ]
-theme-byline     : [ "Raleway", "#FFFFFF", "none", "#FAD744", "100", "110", "15" ]
-theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#FAD744", "100", "100", "15" ]
+theme-background : [ "#403446" ]
+theme-headline   : [ "Raleway", "#B3D6C9", "none", "#FFFFFF", "100", "120", "15" ]
+theme-byline     : [ "Raleway", "#FFFFFF", "none", "#B3D6C9", "100", "110", "15" ]
+theme-text       : [ "Ubuntu", "#B3D6C9", "none", "#92B9B3", "100", "100", "15" ]
 theme-links      : [ "#5289F7", "#5254F7" ]
 theme-code       : [ "Fira Code", "100", "120" ]
 highlight        : monokai
