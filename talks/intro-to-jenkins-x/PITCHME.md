@@ -236,6 +236,25 @@ The concept of pipelines and extensibility is what they have in common.
 
 @snapend
 
+@title[Jenkins X - Canary Deployments]
+---?image=assets/img/jx-artwork/jx-robocat.png&position=left 45%&size=40%
+
+@snap[east span-70]
+##  Canary Deployments with Istio & Flagger
+
+#### Install Istio and Flagger at cluster level, then configure via YAML
+
+@css[text-06 thin-text text-italic]([ View metrics via Grafana/Prometheus ] )
+
+@snap[west-south]
+![height=100px](assets/img/k8s-icons/resources/labeled/crd.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/svc.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/deploy.svg)
+![height=100px](assets/img/k8s-icons/resources/labeled/pod.svg)
+@snapend
+
+@snapend
+
 @title[Jenkins X - GitOps]
 ---?image=assets/img/jx-artwork/jx-gitops.png&position=left 45%&size=40%
 

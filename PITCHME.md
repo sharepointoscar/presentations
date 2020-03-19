@@ -10,6 +10,7 @@
 
 ---
 @title[Whoami]
+---?image=assets/img/ski_oscar.jpg&size=cover&opacity=40
 
 @snap[center text-gold text-22]
 >$ whoami
@@ -18,6 +19,7 @@
 ---
 
 @title[about me]
+
 @code[json zoom-13  code-reveal-slow](me.js)
 @[2]
 @[3-5]
