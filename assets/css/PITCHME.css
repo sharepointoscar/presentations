@@ -93,3 +93,5 @@ go on with your bad self!
         0 0 100px 60px #f0f, /* middle magenta */
         0 0 140px 90px #0ff; /* outer cyan */
 }
+
+#gp-logo img { max-height: 1.75em !important; }
