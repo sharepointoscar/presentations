@@ -55,6 +55,4 @@
 
 ---?include=talks/intro-to-jenkins-x/PITCHME.md
 
----?include=workshops/continuous-delivery-jx/PITCHME.md
-
 ---?include=common/PITCHME.md

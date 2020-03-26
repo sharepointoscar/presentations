@@ -16,9 +16,9 @@
 ---
 
 @snap[west span-45 text-right]
-### Jenkins X: Hands-on Demonstration
-#### Implement Canary Deployments for your App
-@css[text-05](@fa[calendar] March 18, 2020 8 am PST / 11 EST)
+### AWS Webinar
+#### Intro and demo of Jenkins X Features
+@css[text-05](@fa[calendar] Apri 21, 2020)
 @snapend
 
 @snap[east span-50]
