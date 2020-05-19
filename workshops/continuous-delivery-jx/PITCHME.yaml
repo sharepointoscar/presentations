@@ -27,24 +27,24 @@ footnote : " "
 # Published Setting
 # Doc: https://gitpitch.com/docs/settings/published
 #
-published : false
+published : true
 
 #
 # Twitter Card Settings (This Presentation)
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "Oscar Medina @SharePointOscar"
-description : "Talks and Workshops - my decks"
-thumbnail : assets/img/r8.compressed.png
+title : "Oscar Medina - Jenkins X Presentations"
+description : "Presentations on my workshops and talks"
+thumbnail : assets/img/jenkinsx-stacked-color.png
 
 code-line-numbers : true
 
-transition: none
+transition: default
 
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
 theme            : template
 theme-background : [ "#1E5C97" ]
-theme-headline   : [ "Raleway", "#74FAA8", "none", "#FFFFFF", "100", "120", "15" ]
+theme-headline   : [ "Raleway", "#FFFFFF", "none", "#FFFFFF", "100", "120", "15" ]
 theme-byline     : [ "Raleway", "#FFFFFF", "none", "#74FAA8", "100", "110", "15" ]
 theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#24D7B0", "100", "100", "15" ]
 theme-links      : [ "#5289F7", "#5254F7" ]
@@ -52,7 +52,7 @@ theme-code       : [ "Fira Code", "100", "120" ]
 highlight        : monokai
 theme-controls   : [ "#C0C0C0" ]
 theme-margins    : [ "0", "15px" ]
-logo             : assets/img/logo_cb.png
+logo             : assets/img/cb_connect.png
 logo-position    : top-left
 layout           : center
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END

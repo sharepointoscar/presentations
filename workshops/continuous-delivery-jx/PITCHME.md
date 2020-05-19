@@ -178,15 +178,8 @@ jx import --url https://github.com/jenkins-oscar/skiapp.git
 ## @css[text-yellow](Promote App to Production   @fa[laptop-code])
 @snapend
 
----
+```bash
 
-@title[Creating Custom Build-Packs]
-@snap[north span-100]
-## @css[text-yellow](Creating Custom Build Packs   @fa[laptop-code])
-@snap[text-center text-06]
-If you have specific needs, build a custom build pack and reuse it!
-#https://blog.testproject.io/2019/10/29/create-custom-build-packs-for-jenkins-x/
-@snapend
-@snapend
-
----
+## promote latest version to production
+jx promote --app skiapp --version $VERSION --env production
+```

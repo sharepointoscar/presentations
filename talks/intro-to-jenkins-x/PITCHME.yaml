@@ -43,16 +43,15 @@ transition: default
 
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
 theme            : template
-theme-background : [ "#2B3252" ]
-theme-headline   : [ "Raleway", "#FAD744", "none", "#FFFFFF", "100", "120", "15" ]
-theme-byline     : [ "Raleway", "#FFFFFF", "none", "#FAD744", "100", "110", "15" ]
-theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#FAD744", "100", "100", "15" ]
+theme-background : [ "#1E5C97" ]
+theme-headline   : [ "Raleway", "#FFFFFF", "none", "#FFFFFF", "100", "120", "15" ]
+theme-byline     : [ "Raleway", "#FFFFFF", "none", "#74FAA8", "100", "110", "15" ]
+theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#24D7B0", "100", "100", "15" ]
 theme-links      : [ "#5289F7", "#5254F7" ]
 theme-code       : [ "Fira Code", "100", "120" ]
 highlight        : monokai
 theme-controls   : [ "#C0C0C0" ]
 theme-margins    : [ "0", "15px" ]
-logo             : assets/img/logo_cb.png
 logo-position    : top-left
 layout           : center
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END
