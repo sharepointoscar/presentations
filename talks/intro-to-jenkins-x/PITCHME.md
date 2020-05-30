@@ -104,17 +104,7 @@ The concept of pipelines and extensibility is what they have in common.
 @snapend
 
 ---
-@title[What is Jenkins X? - Architecture]
 
-@snap[west span-70 ]
-@cloud[Jenkins X GCP Diagram](common/src/architecture_k8s.py)
-@snapend
-
-@snap[east span-30 text-right]
-#### **Kubernetes Fresh Install @emoji[bathtub]** Jenkins X Resources
-@snapend
-
----
 @title[What is Jenkins X? - Tekton as Pipeline Exec Engine]
 ---?image=assets/img/jx-artwork/jx-tekton-engine.png&position=-28% 15%&size=55% 100%
 

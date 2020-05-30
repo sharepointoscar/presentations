@@ -26,3 +26,30 @@
 2. Implementing Canary Deployments in Jenkins X
 @olend
 @snapend 
+
+
+---
+
+@title[What is Jenkins X? - Architecture]
+
+@snap[west span-70 ]
+@cloud[Jenkins X GCP Diagram](common/src/architecture_cronjobs.py)
+@snapend
+
+@snap[east span-30 text-right]
+#### **Kubernetes Fresh Install @emoji[bathtub]** Jenkins X CronJobs
+@snapend
+
+---
+
+@title[What is Jenkins X? - Architecture]
+
+@snap[west span-70 ]
+@cloud[Jenkins X GCP Diagram](common/src/architecture_deployments.py)
+@snapend
+
+@snap[east span-30 text-right]
+#### **Kubernetes Fresh Install @emoji[bathtub]** Deployments
+@snapend
+
+---
