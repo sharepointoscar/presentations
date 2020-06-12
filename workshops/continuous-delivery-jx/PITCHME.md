@@ -34,7 +34,7 @@ Lab @fa[hourglass-start fa-1x] Time!
 ---
 @title[Install CLI]
 
-## Install JX CLI   @css[text-yellow](@fa[terminal])
+## Install JX CLI (CloudBees Jenkins X Distro)  @css[text-yellow](@fa[terminal])
 
 @code[bash zoom-12 code-reveal-slow code-wrap](workshops/continuous-delivery-jx/install-cli.sh)
 
@@ -60,7 +60,7 @@ Lab @fa[hourglass-start fa-1x] Time!
 @title[Install Jenkins X]
 
 @snap[north span-100]
-## @css[text-yellow](Install Jenkins X   @fa[github])
+## @css[text-yellow](Install Jenkins X (CloudBees Jenkins X Distro)   @fa[github])
 @snapend
 
 @snap[south span-100]

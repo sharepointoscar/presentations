@@ -9,5 +9,5 @@ git clone https://github.com/sharepointoscar/presentations.git
 
 ```
 ```bash
-docker run -it -v {WORKINGDIR}:/repo -p 9000:9000 gitpitch/desktop:pro
+docker run -it -v $PWD:/repo -p 9000:9000 gitpitch/desktop:pro
 ```

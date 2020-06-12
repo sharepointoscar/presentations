@@ -1,8 +1,9 @@
 # clone cluster config repo, change jx-requirements.yaml
+# OSS JX Boot Config Repo only
+# https://github.com/jenkins-x/jenkins-x-boot-config.git
 git clone \
-    https://github.com/jenkins-x/jenkins-x-boot-config.git  \
-    environment-$CLUSTER_NAME-dev && \
-    
+    https://github.com/cloudbees/cloudbees-jenkins-x-boot-config.git  \
+    environment-$CLUSTER_NAME-dev && \ 
 cd environment-$CLUSTER_NAME-dev
 
 # Open jx-requirements.yml in an editor

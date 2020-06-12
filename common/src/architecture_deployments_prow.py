@@ -24,7 +24,7 @@ edge_attrib = {
     "color": "#4a4e52"
 }
 
-with Diagram("Deployments",outformat="png",filename="deployments",show=True,
+with Diagram("Deployments",outformat="svg",filename="deployments_prow",show=True,
 graph_attr=diagram_attrib,node_attr=node_attrib,edge_attr=edge_attrib,direction="TB"):
     with Cluster("Deployments",graph_attr={"fontsize": "67"}):
         ing_chartmuseum = Nginx("Ingress") 

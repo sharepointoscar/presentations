@@ -88,20 +88,17 @@ The concept of pipelines and extensibility is what they have in common.
 ---?image=assets/img/jx-artwork/jx-tour-poster.png&position=2% 45%&size=25%
 
 @snap[center-north text-right]
-## Runs on the Three Leading Clouds
+## Runs on EKS and GKE
 @snapend
 
-@snap[west-south span-66 fragment]
+@snap[west-center fragment]
 ![height=280px,title=AWS,position=5px](https://www.sinefa.com/wp-content/uploads/2019/03/AWS-Logo-White.png)
 @snapend
 
-@snap[east-north span-88 fragment]
+@snap[center-right fragment]
 ![width=200,title=GCP](https://seeklogo.com/images/G/google-cloud-logo-6B950E8ADB-seeklogo.com.png)
 @snapend
 
-@snap[south-east fragment]
-![width=300,title=Azure](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1200px-Microsoft_Azure_Logo.svg.png)
-@snapend
 
 ---
 
