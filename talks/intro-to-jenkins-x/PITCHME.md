@@ -64,7 +64,7 @@
 @snap[west text-smallcaps font-lato-thin span-55]
 @css[]
 
-El concepto de pipas y su  extensibilidad es lo que tienen en comun.
+El concepto de pipas y su extensibilidad es lo que tienen en comun.
 
 @css[text-bold text-gold text-15](Eso es todo!)
 @snapend
@@ -107,9 +107,9 @@ El concepto de pipas y su  extensibilidad es lo que tienen en comun.
 ---?image=assets/img/jx-artwork/jx-tekton-engine.png&position=-28% 15%&size=55% 100%
 
 @snap[east]
-## Tekton es @fa[heartbeat fa-3x pulsingheart] 
-## de el motor de
-## ejecuccion de Pipas
+## Tekton es el @fa[heartbeat fa-3x pulsingheart] 
+## del system de 
+## ejecución de Pipas
 @snapend
 
 
@@ -128,7 +128,7 @@ El concepto de pipas y su  extensibilidad es lo que tienen en comun.
 ---?image=assets/img/jx-artwork/jx-tekton-engine.png&position=-28% 15%&size=55% 100%
 
 @snap[east span-80]
-#### Jenkins X Te Abstracta de la complejidad Tekton 
+#### Jenkins X Te Abstrae de la complejidad Tekton 
 ![IMAGE](assets/img/jx-pipeline-to-tekton.png)
 @snapend
 
@@ -136,9 +136,9 @@ El concepto de pipas y su  extensibilidad es lo que tienen en comun.
 ---?image=assets/img/jx-artwork/jx-xoltar.png&position=left 45%&size=40%
 
 @snap[east span-70]
-##  Preview Environments give you a glimpse into the future!
+##  Vista Previa te da un vislumbre al futuro!
 
-#### PMs and Designers preview your work.  You make sure your code is working.
+#### Tus colegas ven tu trabajo antes de desplegarlo. Tu te aseguras que to code funciona
 
 @css[text-06 thin-text text-italic]([ Namespaced Ingress, Pod running your latest app version ] )
 
