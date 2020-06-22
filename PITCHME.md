@@ -24,6 +24,7 @@
 @[2]
 @[3-5]
 @[6]
+@[7]
 
 
 @snap[south center text-gold text-15]
@@ -33,11 +34,14 @@
 ---
 
 @title[my book]
+@snap[west-south]
+---?image=https://images.manning.com/720/960/resize/book/b/fc2718f-5b05-4a48-a622-be99f6b5c4cf/Yuen-GitOps-MEAP-HI.png&size=30%&position=left
 
-@snap[center]
-@img[height=350px title=DevOps for SharePoint](https://images-na.ssl-images-amazon.com/images/I/41CwoAkPTCL._SX348_BO1,204,203,200_.jpg)
+---?image=https://images-na.ssl-images-amazon.com/images/I/41CwoAkPTCL._SX348_BO1,204,203,200_.jpg&size=30%&position=right
+
 @snapend
 
+---
 
 @title[Audi R8 - JENKINSX 1]
 ---?image=assets/img/r8.png&size=cover&opacity=40

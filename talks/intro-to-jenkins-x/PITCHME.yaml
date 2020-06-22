@@ -34,8 +34,8 @@ published : true
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
 title : "Oscar Medina - Jenkins X Presentations"
-description : "Presentations on my workshops and talks"
-thumbnail : assets/img/jenkinsx-stacked-color.png
+description : "Jenkins X Presentations workshops"
+thumbnail : assets/img/r8.compressed.png
 
 code-line-numbers : true
 
