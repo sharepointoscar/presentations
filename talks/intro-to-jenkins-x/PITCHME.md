@@ -1,16 +1,15 @@
 ---?image=assets/img/jx-artwork/jx-robocat.png&position=-28% 15%&size=55% 100%
 
 @snap[text-right]
-## Introducion 
-## a @css[jx-header]( Jenkins X)
-### una guia para todos
+## Intro to @css[jx-header]( Jenkins X)
+### a beginner's guide
 @snapend
 
 ---
-@title[Te llevamos en un Tour de Jenkins X Boat Tour]
+@title[Let me take you on a Jenkins X Boat Tour]
 
 @snap[center]
-## Vamos a Explorar Jenkins X!!
+## Lets explore Jenkins X!!
 @snapend
 
 @snap[center]
@@ -18,11 +17,11 @@
 @snapend
 
 ---
-@title[Que es Jenkins X?]
+@title[What is Jenkins X?]
 @transition[fade]
 
 @snap[west]
-# Que es Jenkins X?
+# What is Jenkins X?
 @snapend
 
 @snap[east fragment]
@@ -35,26 +34,26 @@
 
 ---
 @snap[east fragment]
-@quote[Jenkins X  no es mejor o peor que Jenkins y no es una nueva version o es mejor que Jenkins. Es un producto completamente diferente](Viktor Farcic - Principal Software Delivery Strategist @CloudBees)
+@quote[Jenkins X  is not better or worse than Jenkins and is not a new and improved version of Jenkins. It is a completely different solution.](Viktor Farcic - Principal Software Delivery Strategist @CloudBees)
 @snapend
 
 ---
-@title[Que es Jenkins X? - proque no es Jenkins]
+@title[What is Jenkins X? - why it is not Jenkins X]
 @transition[fade]
 ---?image=assets/img/jx-artwork/jx-robocat.png&position=-28% 15%&size=55% 100%
 
 @snap[east span-60]
 @ol[list-spaced-bullets list-boxed-bullets text-gold text-08]
-1. Completamente code nuevo          @fa[code-branch fa-3x text-yellow]
-2. Nada se a reusado de Jenkins     @fab[creative-commons-zero fa-2x text-yellow]
-3. Es nativo a Kubernetes                 @fa[dharmachakra fa-3x text-yellow]
-4. Arquitectura Diferente           @fa[vihara fa-3x text-yellow]
+1. Completely new code-base         @fa[code-branch fa-3x text-yellow]
+2. Zero code from Jenkins           @fab[creative-commons-zero fa-3x text-yellow]
+3. Kubernetes Native                @fa[dharmachakra fa-3x text-yellow]
+4. Different architecture           @fa[vihara fa-3x text-yellow]
 @olend
 @snapend
 
 
 ---
-@title[Que es Jenkins X? - proque no es Jenkins]
+@title[What is Jenkins X? - why it is not Jenkins X]
 @transition[fade]
 @snap[east fragment]
 ![half,height=500px,title=Jenkins is NOT Jenkins X](assets/img/jx-artwork/jenkins-v-jenkinsx.png)
@@ -62,11 +61,11 @@
 
 
 @snap[west text-smallcaps font-lato-thin span-55]
-@css[]
+@css[](Jenkins X is Jenkins’ spiritual counterpart for the cloud-native world)
 
-El concepto de pipelines y su extensibilidad es lo que tienen en comun.
+The concept of pipelines and extensibility is what they have in common.  
 
-@css[text-bold text-gold text-15](Eso es todo!)
+@css[text-bold text-gold text-15](That is it!)
 @snapend
 
 
@@ -76,12 +75,12 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 
 @snap[east span-69]
  @css[jx-header text-uppercase text-20 text-shadow](Jenkins) @css[jx-header text-uppercase text-bold text-20 text-shadow](X)  
-## es una plataforma @css[text-bold](opinada)
+## is an @css[text-bold](opinionated)
 
-@css[font-lato-light](Nativo a Kubernetes @fa[dharmachakra text-yellow])
+@css[font-lato-light](Kubernetes @fa[dharmachakra text-yellow] native)
 
 ##  CI/CD platform
-@css[text-10 thin-text](Compuesta de muchos otros proyectos de open-source)
+@css[text-10 thin-text](Comprised of many open-source technologies)
 @snapend
 
 ---
@@ -89,7 +88,7 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 ---?image=assets/img/jx-artwork/jx-tour-poster.png&position=2% 45%&size=25%
 
 @snap[center-north text-right]
-##  Donde puedes utilizarlo?
+## Runs on EKS and GKE
 @snapend
 
 @snap[west-center fragment]
@@ -103,14 +102,14 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 
 ---
 
-@title[What is Jenkins X? - Tekton es el motor para Pipas]
+@title[What is Jenkins X? - Tekton as Pipeline Exec Engine]
 ---?image=assets/img/jx-artwork/jx-tekton-engine.png&position=-28% 15%&size=55% 100%
 
 @snap[east]
-## Tekton es el @fa[heartbeat fa-3x pulsingheart] 
-## del sistema de 
-## ejecución de pipelines
-@snapend    
+## Tekton is the @fa[heartbeat fa-3x pulsingheart] 
+## of the Pipeline
+## Execution Engine
+@snapend
 
 
 @title[What is Jenkins X? - Pipelines]
@@ -118,9 +117,9 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 
 @snap[east span-78]
 @ol[list-spaced-bullets list-boxed-bullets text-gold text-08]
-1. Pipelines son declarativas (YAML)             @fa[code fa-3x text-yellow]
-2. Etapas corren en su propio pod        @fa[box fa-3x text-yellow]
-3. Nativo a Kubernetes                             @fa[dharmachakra fa-3x text-yellow]
+1. Pipelines are declarative (YAML)             @fa[code fa-3x text-yellow]
+2. Stages run on their own ephemeral pod        @fa[box fa-3x text-yellow]
+3. Kubernetes Native                            @fa[dharmachakra fa-3x text-yellow]
 @olend
 @snapend
 
@@ -128,7 +127,7 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 ---?image=assets/img/jx-artwork/jx-tekton-engine.png&position=-28% 15%&size=55% 100%
 
 @snap[east span-80]
-#### Jenkins X Te evita de la complejidad Tekton 
+#### Jenkins X Abstracts you from Tekton Intricacies 
 ![IMAGE](assets/img/jx-pipeline-to-tekton.png)
 @snapend
 
@@ -136,9 +135,9 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 ---?image=assets/img/jx-artwork/jx-xoltar.png&position=left 45%&size=40%
 
 @snap[east span-70]
-##  Preview Environments te da un vislumbre al futuro!
+##  Preview Environments give you a glimpse into the future!
 
-#### Tus colegas ven tu trabajo antes de desplegarlo. Tu te aseguras que el code funciona
+#### PMs and Designers preview your work.  You make sure your code is working.
 
 @css[text-06 thin-text text-italic]([ Namespaced Ingress, Pod running your latest app version ] )
 
@@ -156,7 +155,7 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 @snap[east span-70]
 ##  ChatOps
 
-#### El Bot de Jenkins X automaticamente commenta en tu codigo, Issues and Pull Requests
+#### Jenkins X Bot automatically comments on your Commits, Issues and Pull Requests
 
 @css[text-06 thin-text text-italic]([ Use your Git Provider built-in UI ] )
 
@@ -173,7 +172,7 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 @snap[east span-70]
 ##  QuickStarts
 
-#### Explora Jenkins X sin escribir ninguna linea de codigo.
+#### Kick the tires without writing a single line of code.
 
 @css[text-06 thin-text text-italic]([ Namespaced Ingress, Pod running sampled app ] )
 
@@ -191,7 +190,7 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 @snap[east span-70]
 ##  DevPods
 
-#### Desarolla directamente en la nube por medio de un Pod en Kubernetes
+#### develop in the cloud via a kubernetes devpod.
 
 @css[text-06 thin-text text-italic]([   Ingress, Pod with your project files synched, modify live ] )
 
@@ -209,7 +208,7 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 @snap[east span-70]
 ##  Build Packs
 
-#### Pipeline templates basados en el lenguaje de tu app (Java, Python, NodeJS)
+#### pipeline templates based on the language your app runs.
 
 @css[text-06 thin-text text-italic]([ Namespaced Ingress, Pod running your latest app version ] )
 
@@ -227,7 +226,7 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 @snap[east span-70]
 ##  Serverless Deployments
 
-#### Usando Knative tu app se desactiva basado en el trafico que recibe.
+#### Knative spin up/down based on traffic demand.
 
 @css[text-06 thin-text text-italic]([ Namespaced Ingress, Pods running your latest app version ] )
 
@@ -245,7 +244,7 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 @snap[east span-70]
 ##  Canary Deployments with Istio & Flagger
 
-#### Instalando Istio y Flagger en tu cluster, simplemente se configura via YAML
+#### Install Istio and Flagger at cluster level, then configure via YAML
 
 @css[text-06 thin-text text-italic]([ View metrics via Grafana/Prometheus ] )
 
@@ -264,8 +263,8 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 @snap[east span-70]
 ##  GitOps
 
-#### Para practica segura se usa el GitOps para cambios de prueba
-@css[text-06 text-gold]( Jenkins X usa gitops para mantener su propia configuracion)
+#### git as single source of truth for everything.
+@css[text-06 text-gold]( jx uses gitops to manage its own config)
 
 @css[text-06 thin-text text-italic]([ git repositories hold all configuration ] )
 
@@ -279,7 +278,7 @@ El concepto de pipelines y su extensibilidad es lo que tienen en comun.
 
 @title[Questions]
 @snap[north span-100]
-## @css[text-yellow](Q&A   @fa[question])
+## @css[text-yellow](Got Questions   @fa[question])
 @snapend
-# Demo 
+# Q&A
 @emoji[tada]
